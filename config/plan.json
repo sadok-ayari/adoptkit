@@ -1,0 +1,31 @@
+{
+  "tool": "Weekly coverage digest",
+  "problem": "The team reads clips for ninety minutes on Monday and leaves with a different story about the week than the one the data supports.",
+  "owner": "Head of Communications",
+  "sponsor": "Director",
+  "ritual": {
+    "name": "Monday coverage review",
+    "cadence": "weekly, Monday 09:00",
+    "moment": "first item, before anyone opens a browser",
+    "participants": ["Head of Communications", "media officer", "programme lead"]
+  },
+  "trigger": "the scheduler runs at 06:00 Monday; the digest is on the shared drive before 07:00",
+  "format": "one page: five items that matter, why each matters, and who else carried the story",
+  "metric": {
+    "name": "review time to reach a decision",
+    "target": "90 minutes down to 30, within four weeks",
+    "source": "meeting start and end time, logged by the chair"
+  },
+  "stops": [
+    "printing the raw clips list for the meeting",
+    "the separate spreadsheet where each officer kept their own count"
+  ],
+  "failure_modes": [
+    {"mode": "Nobody opens it", "mitigation": "the digest is the first agenda item; the chair opens it on screen"},
+    {"mode": "The team trusts the score more than the story", "mitigation": "every item prints its reasons; one story is read in full each week"},
+    {"mode": "It becomes a second process", "mitigation": "the old clips list is withdrawn in week two, same day as go-live"}
+  ],
+  "start": "2026-11-16",
+  "review_weeks": 4,
+  "fallback": "Revert to the manual list for two weeks, then diagnose whether the failure was the tool or the ritual."
+}

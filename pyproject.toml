@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adoptkit"
+version = "1.0.0"
+description = "Validate and write the adoption pack a tool needs before it ships: ritual, trigger, owner, metric, what stops."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Sadok Ayari"}]
+keywords = ["adoption", "change management", "communications", "internal tools", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+]
+
+[project.urls]
+Homepage = "https://github.com/sadok-ayari/adoptkit"
+
+[project.scripts]
+adoptkit = "adoptkit.cli:main"
+
+[tool.setuptools]
+packages = ["adoptkit"]
